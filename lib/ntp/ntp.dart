@@ -2,7 +2,7 @@ part of ntp;
 
 class NTP {
   /// Return NTP delay in milliseconds
-  static Future<int> getNtpOffset({String lookUpAddress = 'pool.ntp.org', int port = 123, DateTime localTime}) async {
+  static Future<int> getNtpOffset({String lookUpAddress = '0.fr.pool.ntp.org', int port = 123, DateTime localTime}) async {
     final DateTime time = localTime ?? DateTime.now();
     final _NTPMessage _ntpMessage = _NTPMessage();
 
